@@ -9,16 +9,6 @@ export default function Page({
   title,
   canonical,
 }) {
-  if (!document.querySelector('meta[name="description"]')) {
-    const meta = document.createElement('meta')
-    meta.name = 'description'
-    meta.content = description
-    document.getElementsByTagName('head')[0].appendChild(meta)
-  } else {
-    document.querySelector('meta[name="description"]').content = description
-  }
-  document.querySelector('title').innerHTML = title.content
-
   return <Layout>{children}</Layout>
 }
 
