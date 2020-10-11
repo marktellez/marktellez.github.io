@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{Dtc0:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return c}));var o=t("q1tI"),r=t.n(o),u=t("MqbH");function c(e){return function(e){if(null==e)throw new TypeError("Cannot destructure undefined")}(e),r.a.createElement(u.a,{title:"Welcome to by home on the interwebs"},r.a.createElement("h1",null,"Hello world"))}}}]);
+//# sourceMappingURL=component---src-pages-index-jsx-b00fdd99e7995dca9b69.js.map
