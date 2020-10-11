@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog MDX`,
-    author: `Matt Hagner`,
-    description: `An extension of the gatsby starter blog, with support for MDX`,
+    title: `Happy hacking.`,
+    author: `Mark Tellez`,
+    description: ``,
     siteUrl: `https://gatsby-starter-blog-mdx-demo.netlify.com/`,
     social: {
-      twitter: `mattinthecouch`,
+      twitter: `devmentorlive`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/src/blog`,
         name: `blog`,
       },
     },
@@ -29,9 +29,7 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         // a workaround to solve mdx-remark plugin compat issue
         // https://github.com/gatsbyjs/gatsby/issues/15486
-        plugins: [
-          `gatsby-remark-images`,
-        ],
+        plugins: [`gatsby-remark-images`],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -80,7 +78,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
+              return allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   data: edge.node.frontmatter.date,
