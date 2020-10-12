@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../layout'
+import { Helmet } from 'react-helmet'
 
 export default function Page({
   children,
@@ -9,7 +10,17 @@ export default function Page({
   title,
   canonical,
 }) {
-  return <Layout>{children}</Layout>
+  return (
+    <Layout>
+      <Helmet
+        title={title}
+        description={description}
+        keywords={keywords}
+        canonical={canonical}
+      />
+      {children}
+    </Layout>
+  )
 }
 
 Page.defaultProps = {

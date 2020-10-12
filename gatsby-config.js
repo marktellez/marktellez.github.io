@@ -26,6 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        maintainCase: true,
         extensions: ['.mdx', '.md'],
         // a workaround to solve mdx-remark plugin compat issue
         // https://github.com/gatsbyjs/gatsby/issues/15486
@@ -50,9 +51,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-smartypants`,
           },
+          {
+            resolve: require.resolve(`./plugins/gatsby-remark-link-previews`),
+          },
         ],
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
