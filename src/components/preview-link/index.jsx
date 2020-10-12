@@ -12,7 +12,7 @@ export default function Link({ href, alt, title, children }) {
   return (
     <Tippy
       content={
-        <img src={`/link-previews/${slug}.jpg`} alt={alt} title={title} />
+        <img src={`/link-previews/${slug}.png`} alt={alt} title={title} />
       }
     >
       <a href={href}>{children}</a>

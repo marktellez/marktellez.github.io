@@ -51,9 +51,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-smartypants`,
           },
-          {
-            resolve: require.resolve(`./plugins/gatsby-remark-link-previews`),
-          },
         ],
       },
     },

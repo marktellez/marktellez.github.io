@@ -1,0 +1,7 @@
+./public/offline-plugin-app-shell-fallback/index.html
+./public/index.html
+./public/404.html
+./public/link-test/index.html
+./public/blog/index.html
+./public/page-data/404.html
+./public/404/index.html
